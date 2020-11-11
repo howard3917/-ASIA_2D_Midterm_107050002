@@ -1,11 +1,17 @@
-﻿
+﻿using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
-    void Startgame()
-    { }
-    void Quitgame()
-    { }
+    public void Startgame()
+    {
+        print("開始遊戲");
+        SceneManager.LoadScene("場景");
+    }
+    public void Quitgame()
+    {
+        print("結束遊戲");
+        Application.Quit();
+    }
 
 }
